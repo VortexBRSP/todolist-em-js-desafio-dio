@@ -1,5 +1,6 @@
 var tarefaInput = document.getElementById("tarefaInput");
 var btnAdicionar = document.getElementById("btnAdicionar");
+var btnLimparTudo = document.getElementById("btnLimparTudo");
 var containerTarefas = document.getElementById("container-tarefas");
 function adicionarTarefa() {
   if (tarefaInput.value != "") {
@@ -10,5 +11,10 @@ function adicionarTarefa() {
     tarefaInput.value = "";
   }
 }
+function limparTudo() {
+  containerTarefas.innerHTML = "";
+  tarefaInput.value = "";
+}
 
 btnAdicionar.addEventListener("click", adicionarTarefa);
+btnLimparTudo.addEventListener("click", limparTudo);
