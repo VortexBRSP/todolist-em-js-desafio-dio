@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
@@ -11,4 +12,40 @@ body {
   justify-content: center;
   background-color: #222;
   height: 100vh;
+  color: #ddd;
+}
+
+#container-todolist {
+  background-color: rgb(93, 93, 93);
+  border-radius: 16px;
+  outline: 2px rgba(255, 255, 255, 0.592) solid;
+  padding: 16px 16px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+#title {
+  font-size: 1.8em;
+}
+#tarefaInput {
+}
+
+.tarefaItem {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 1em;
+  color: white;
+}
+#container-tarefas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  gap: 4px;
 }
