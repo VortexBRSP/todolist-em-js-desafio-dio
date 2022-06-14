@@ -30,8 +30,6 @@ body {
 #title {
   font-size: 1.8em;
 }
-#tarefaInput {
-}
 
 .tarefaItem {
   display: flex;
@@ -41,11 +39,31 @@ body {
   color: white;
 }
 #container-tarefas {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  text-align: left;
   gap: 4px;
+  padding: 0 16px;
+  transition: 0.4s;
+  width: 100%;
+}
+#container-tarefas li {
+  color: white;
+  text-align: left;
+}
+#btnAdicionar {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: #222;
+  cursor: pointer;
+}
+#tarefaInput {
+  padding: 8px;
+  background-color: white;
+  border-radius: 4px;
+  border: 2px #222 solid;
+  color: #222;
 }
