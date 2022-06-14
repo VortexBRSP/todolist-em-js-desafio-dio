@@ -44,9 +44,10 @@ body {
   justify-content: left;
   align-items: left;
   gap: 4px;
-  padding: 0 16px;
+  padding: 0 4px;
   transition: 0.4s;
   width: 100%;
+  list-style-type: none;
 }
 #container-tarefas li {
   color: white;
@@ -66,4 +67,12 @@ body {
   border-radius: 4px;
   border: 2px #222 solid;
   color: #222;
+}
+
+.tarefaCheck:checked + span {
+  text-decoration: line-through;
+}
+.tarefaItem {
+  display: flex;
+  flex-direction: row;
 }
